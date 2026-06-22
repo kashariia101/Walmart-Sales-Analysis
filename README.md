@@ -5,7 +5,6 @@
 
 
 
-# Walmart Store Sales Analysis Dashboard
 
 ## Project Overview
 
