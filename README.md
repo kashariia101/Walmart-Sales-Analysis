@@ -150,28 +150,89 @@ This suggests that customer purchasing activity increases during holiday seasons
 
 ## Key Findings
 
-### Best and Worst Sales Periods
 
-* Sales performance varied significantly across months and quarters.
-* Certain months consistently generated stronger sales than others.
+### 1. Best and Worst Sales Periods
 
-### Store Performance
+Analysis of total weekly sales by month showed that:
 
-* Some stores significantly outperformed others in total sales generated.
-* Store performance was not uniform across all locations.
+- **July** recorded the highest total sales among all months, making it the best-performing month.
+- **January** recorded the lowest total sales, making it the worst-performing month.
 
-### Impact of Economic Factors
+Analysis of quarterly sales showed that:
 
-* Temperature showed a weak negative relationship with Weekly Sales.
-* CPI showed a weak negative relationship with Weekly Sales.
-* Fuel Price showed almost no relationship with Weekly Sales.
+- **Q3** recorded the highest total sales and was the best-performing quarter.
+- **Q1** recorded the lowest total sales and was the weakest-performing quarter.
 
-### Holiday Effects
-
-* Holiday periods generated higher average weekly sales.
-* Seasonal shopping behaviour contributes positively to store performance.
+These results suggest that Walmart experiences stronger sales performance during the middle of the year compared to the beginning of the year.
 
 ---
+
+### 2. Store Performance
+
+Store-level sales analysis revealed that:
+
+- **Store 20** generated the highest total sales across the dataset.
+- **Store 33** generated the lowest total sales across the dataset.
+
+This indicates significant variation in sales performance across Walmart stores.
+
+---
+
+### 3. Impact of Temperature, Fuel Price and CPI on Weekly Sales
+
+Correlation analysis was used to determine the relationship between Weekly Sales and selected economic factors.
+
+| Factor | Correlation Coefficient |
+|----------|----------:|
+| Temperature | -0.064 |
+| Fuel Price | 0.010 |
+| CPI | -0.073 |
+
+Findings:
+
+- Temperature has a very weak negative relationship with Weekly Sales.
+- Fuel Price has almost no relationship with Weekly Sales.
+- CPI has a very weak negative relationship with Weekly Sales.
+
+Overall, these factors had minimal influence on Walmart Weekly Sales within this dataset.
+
+---
+
+### 4. Effect of Holidays on Sales
+
+Average Weekly Sales were compared between holiday and non-holiday periods.
+
+| Period | Average Weekly Sales |
+|----------|--------------------:|
+| Holiday Weeks | $1,122,287.89 |
+| Non-Holiday Weeks | $1,041,256.38 |
+
+Holiday periods generated higher average sales than non-holiday periods, indicating that customers tend to spend more during holidays.
+
+---
+
+### 5. Store-Level Holiday Performance
+
+The comparison of average weekly sales by store during holiday and non-holiday periods showed that:
+
+- Most stores recorded higher sales during holiday periods.
+- The impact of holidays varied across stores.
+- Some stores experienced a much larger increase in sales than others during holiday periods.
+
+This suggests that holiday promotions and seasonal demand affect stores differently.
+
+---
+
+### 6. Overall Business Insight
+
+The analysis shows that Walmart sales are influenced more by seasonal and holiday-related factors than by Temperature, Fuel Price, or CPI.
+
+The strongest business opportunities identified were:
+
+- Maximizing sales during Q3.
+- Leveraging holiday shopping periods.
+- Learning from the practices of top-performing stores such as Store 20.
+- Investigating factors contributing to the low performance of Store 33.
 
 ## Dashboard Features
 
