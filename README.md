@@ -4,249 +4,209 @@
 
 
 
-
-
 ## Project Overview
 
-This project analyzes Walmart store sales data using Microsoft Excel and Power BI.
+This project analyses Walmart Store Sales data using Microsoft Excel and Power BI to identify sales trends, store performance, seasonal patterns, and the effect of selected economic factors on weekly sales.
 
-The goal of the project was to identify sales trends, evaluate store performance, examine holiday effects, and investigate whether environmental and economic factors such as Temperature, CPI, and Fuel Price influence weekly sales.
-
-The analysis was conducted using Pivot Tables, Regression Analysis, Statistical Techniques, and Interactive Dashboard Visualizations.
+The analysis was conducted using Pivot Tables, Pivot Charts, Correlation Analysis, Excel Dashboards, and Power BI Dashboards to transform raw sales data into meaningful business insights.
 
 ---
 
-# Dataset Information
+## Dataset Information
 
-**Dataset:** Walmart Store Sales Dataset
+Dataset: Walmart Store Sales Dataset
 
-The dataset contains weekly sales records for Walmart stores between 2010 and 2012.
+The dataset contains the following variables:
 
-### Variables Included
-
-* Store
+* Store ID
 * Date
 * Weekly Sales
 * Holiday Flag
 * Temperature
 * Fuel Price
-* CPI
+* Consumer Price Index (CPI)
 * Unemployment Rate
 
----
-
-# Key Performance Indicators (KPIs)
-
-* **Total Sales:** $6.74 Billion
-* **Average Weekly Sales:** $1.05 Million
-* **Number of Stores:** 45
-
-These KPIs provide a summary of Walmart's overall sales performance across all stores included in the dataset.
+The dataset covers Walmart store performance from 2010 to 2012.
 
 ---
 
-# Research Questions
+## Project Objectives
+
+The project aimed to answer the following business questions:
 
 ### 1. What are the best and worst months and quarters for Walmart stores?
 
-Monthly and quarterly sales were analyzed to determine periods of highest and lowest sales performance.
+### 2. Which stores recorded the highest quarterly and annual sales growth?
 
-### 2. What are the stores which record the highest quarter and annual sales growth?
+### 3. What is the impact of Temperature, Fuel Price, and CPI on Weekly Sales?
 
-An initial attempt was made to analyze annual sales growth. However, because the dataset only contains data up to October 26, 2012, annual growth calculations would be incomplete and potentially misleading. Therefore, annual growth findings were not included in the final analysis.
+### 4. What is the effect of holidays on sales performance?
 
-### 3. What is the impact of Temperature, CPI, and Fuel Price on weekly sales?
+### 5. Do holiday periods increase average weekly sales?
 
-Multiple Linear Regression was performed to determine whether these variables significantly influence weekly sales.
-
-### 4. Which stores had the highest sales?
-
-Store-level sales were aggregated and compared to identify the highest-performing Walmart stores.
-
-### 5. How do holiday weeks compare to non-holiday weeks in terms of average weekly sales?
-
-Average weekly sales during holiday and non-holiday periods were compared to determine the effect of holidays on sales performance.
-
-### 6. How do holiday and non-holiday periods affect average weekly sales across Walmart stores?
-
-Average weekly sales were analyzed by both Store and Holiday Status to identify how holiday periods influence sales performance at different Walmart locations.
+### 6. Which stores generate the highest overall sales?
 
 ---
 
-# Tools Used
+## Tools Used
 
-## Microsoft Excel
+### Microsoft Excel
 
 * Data Cleaning
 * Pivot Tables
-* Regression Analysis
-* Statistical Analysis
+* Pivot Charts
+* Correlation Analysis
+* Excel Dashboard Development
 
-## Power BI
+### Power BI
 
+* Interactive Dashboard Design
 * KPI Cards
-* Interactive Dashboard
 * Data Visualization
-* Slicers and Filtering
+* Slicer Implementation
 
 ---
 
-# Methodology
+## Methodology
 
-## Monthly and Quarterly Sales Analysis
+### Data Preparation
 
-Pivot Tables were used to aggregate sales by Month and Quarter.
+The dataset was cleaned and formatted in Microsoft Excel.
 
-Column charts were created to visualize sales performance over time and identify seasonal trends.
+Activities included:
 
----
-
-## Store Sales Analysis
-
-Weekly sales were aggregated by Store using Pivot Tables and Power BI visualizations.
-
-This analysis was used to identify stores with the highest overall sales performance.
+* Formatting date fields
+* Creating Month and Quarter categories
+* Checking numerical consistency
+* Preparing data for Pivot Table analysis
 
 ---
 
-## Holiday Sales Analysis
+### Sales Trend Analysis
 
-Average weekly sales were compared between Holiday and Non-Holiday periods.
+Pivot Tables and Pivot Charts were used to:
 
-Sales performance was also analyzed across stores to determine how holiday periods influenced store-level sales.
+* Identify monthly sales performance
+* Compare quarterly sales performance
+* Determine best and worst performing periods
 
----
-
-## Holiday Regression Analysis
-
-A Simple Linear Regression model was developed using:
-
-### Dependent Variable
-
-* Weekly Sales
-
-### Independent Variable
-
-* Holiday Flag
-
-### Results
-
-* **R² = 0.0014**
-* **Significance F = 0.0030**
-
-The model was statistically significant, indicating that holiday status has a measurable effect on weekly sales.
+Sales values were analysed using Total Weekly Sales.
 
 ---
 
-## Temperature, CPI and Fuel Price Analysis
+### Store Performance Analysis
 
-A Multiple Linear Regression model was developed using:
+Store performance was analysed by:
 
-### Dependent Variable
+* Comparing total sales across stores
+* Identifying top-performing stores
+* Evaluating sales growth patterns
 
-* Weekly Sales
-
-### Independent Variables
-
-* Temperature
-* Fuel Price
-* CPI
-
-### Regression Results
-
-* **R² = 0.0080**
-* **Significance F = 3.48 × 10⁻¹¹**
-
-### Variable Significance
-
-| Variable    | P-Value  | Significant |
-| ----------- | -------- | ----------- |
-| Temperature | 0.000029 | Yes         |
-| Fuel Price  | 0.588819 | No          |
-| CPI         | 0.000001 | Yes         |
+Annual growth results were interpreted cautiously because the 2012 dataset contains records only up to October 2012.
 
 ---
 
-# Key Findings
+### Correlation Analysis
 
-## Monthly and Quarterly Performance
+Correlation analysis was conducted to determine whether Temperature, Fuel Price, and CPI influence Weekly Sales.
 
-* Sales performance varied across months and quarters.
-* Some quarters consistently generated stronger sales than others.
-* Seasonal patterns were observed throughout the dataset.
+Correlation coefficients obtained:
 
----
+| Factor      | Correlation with Weekly Sales |
+| ----------- | ----------------------------: |
+| Temperature |                        -0.064 |
+| Fuel Price  |                         0.010 |
+| CPI         |                        -0.073 |
 
-## Store Performance
+Interpretation:
 
-* Sales performance differed significantly across Walmart stores.
-* Several stores consistently generated substantially higher sales than others.
-* Store-level analysis identified the highest-performing stores within the dataset.
+* Temperature shows a very weak negative relationship with Weekly Sales.
+* Fuel Price shows almost no relationship with Weekly Sales.
+* CPI shows a very weak negative relationship with Weekly Sales.
 
----
-
-## Holiday Effects
-
-* Holiday weeks generally recorded higher average weekly sales than non-holiday weeks.
-* Holiday status was found to be statistically significant in the regression analysis.
-* Holidays can therefore be considered an important contributor to sales performance.
+Overall, the selected economic variables have minimal influence on Walmart Weekly Sales within this dataset.
 
 ---
 
-## Impact of Temperature, CPI and Fuel Price
+### Holiday Analysis
 
-* Temperature was statistically significant (p < 0.05).
-* CPI was statistically significant (p < 0.05).
-* Fuel Price was not statistically significant (p > 0.05).
+Holiday sales were compared against non-holiday sales.
 
-Although Temperature and CPI were statistically significant predictors, the model's explanatory power was very low.
+Average Weekly Sales:
 
-The regression model produced an **R² value of 0.008**, meaning that less than 1% of the variation in weekly sales can be explained by Temperature, CPI, and Fuel Price.
+| Category          | Average Weekly Sales |
+| ----------------- | -------------------: |
+| Holiday Weeks     |        $1,122,287.89 |
+| Non-Holiday Weeks |        $1,041,256.38 |
 
-This suggests that other factors not included in the dataset likely play a much larger role in influencing sales performance.
+Result:
 
----
+Holiday periods recorded higher average weekly sales than non-holiday periods.
 
-# Dataset Limitations
-
-The dataset contains records from:
-
-* 2010
-* 2011
-* Part of 2012
-
-The year 2012 contains data only up to **October 26, 2012**.
-
-Because the final year is incomplete, annual growth calculations would not provide a fair comparison with previous years. Therefore, annual growth findings were excluded from the final analysis.
+This suggests that customer purchasing activity increases during holiday seasons.
 
 ---
 
-# Dashboard Features
+## Key Findings
 
-The Power BI dashboard includes:
+### Best and Worst Sales Periods
 
-* Total Sales KPI
-* Average Weekly Sales KPI
-* Number of Stores KPI
+* Sales performance varied significantly across months and quarters.
+* Certain months consistently generated stronger sales than others.
+
+### Store Performance
+
+* Some stores significantly outperformed others in total sales generated.
+* Store performance was not uniform across all locations.
+
+### Impact of Economic Factors
+
+* Temperature showed a weak negative relationship with Weekly Sales.
+* CPI showed a weak negative relationship with Weekly Sales.
+* Fuel Price showed almost no relationship with Weekly Sales.
+
+### Holiday Effects
+
+* Holiday periods generated higher average weekly sales.
+* Seasonal shopping behaviour contributes positively to store performance.
+
+---
+
+## Dashboard Features
+
+### Excel Dashboard
+
 * Monthly Sales Analysis
 * Quarterly Sales Analysis
-* Store Sales Analysis
-* Holiday Sales Analysis
-* Holiday vs Non-Holiday Store Comparison
-* Temperature vs Weekly Sales Analysis
-* CPI vs Weekly Sales Analysis
-* Interactive Store Slicer
+* Store Performance Analysis
+* Holiday Impact Analysis
+* Correlation Analysis
+* Interactive Slicers
+
+### Power BI Dashboard
+
+* KPI Cards
+* Interactive Filtering
+* Sales Trend Visualizations
+* Holiday Performance Insights
+* Store-Level Performance Analysis
 
 ---
 
-# Conclusion
+## Conclusion
 
-This project demonstrates how Microsoft Excel and Power BI can be used together to perform business intelligence, statistical analysis, and data visualization.
+The analysis revealed that Walmart sales performance is influenced more by seasonal trends, holiday periods, and store-specific characteristics than by Temperature, Fuel Price, or CPI.
 
-The analysis revealed that sales performance varies across months, quarters, stores, and holiday periods. Holiday weeks generally produced stronger sales performance than non-holiday weeks.
+Holiday periods consistently generated stronger sales performance, while the selected economic variables demonstrated very weak relationships with Weekly Sales.
 
-Regression analysis identified Temperature and CPI as statistically significant predictors of weekly sales, while Fuel Price was not statistically significant. However, the low R² values obtained from the regression models indicate that additional variables not included in the dataset likely have a greater influence on sales performance.
+The findings provide valuable insights into Walmart sales behaviour and demonstrate the practical application of Excel and Power BI in business data analysis.
+
+---
+
+## Author
+
+Data Analysis Project completed using Microsoft Excel and Power BI.
 
 If you have any questions, you can reach me through my emai:kashari.ia.101@gmail.com  ,thank you.
 
-Overall, the project successfully provides insights into Walmart sales trends and demonstrates practical applications of data analytics techniques using Excel and Power BI.
